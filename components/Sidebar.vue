@@ -54,7 +54,7 @@ export default {
   height: 800px;
   width: 800px;
   margin: 0 50px 50px -680px;
-  border: 1px solid rgb(118, 118, 118);
+  border: 1px solid #384660;
   font-size: 36px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -79,7 +79,7 @@ export default {
 
   a {
     text-decoration: none;
-    color: rgb(118, 118, 118);
+    color: #384660;
   }
 
   &:hover a {
@@ -178,7 +178,7 @@ export default {
     content: "";
     height: 7px;
     width: 7px;
-    background-color: rgb(118, 118, 118);
+    background-color: #384660;
     position: absolute;
     top: 18px;
     left: 0;
