@@ -26,9 +26,5 @@ export default {}
     font-size: 2.25vw;
     color: #384660;
   }
-  &_text {
-    font-size: 2.25vw;
-    color: #000000;
-  }
 }
 </style>

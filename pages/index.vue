@@ -25,6 +25,8 @@ export default {
           responsiveWidth: 0,
           responsiveHeight: 0,
           responsiveSlides: false,
+          scrollBar: true,
+          controlArrows: true,
           // @ts-ignore
           onLeave: this.onLeave,
         },
