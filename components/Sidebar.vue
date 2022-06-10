@@ -1,22 +1,11 @@
 <template>
   <div class="ag-wheel-block">
-    <ul id="pg-wheel" class="ag-wheel_list">
-      <li id="pg-wheel_page-name-1" class="pg-wheel_page-name ag-wheel_page-name pg-ag-active">
-        <a href="#pg-wheel_page-anchor-1">
-          <span class="ag-wheel-page_num">01</span>
-          <div class="ag-wheel-page_name">Section 1</div>
-        </a>
-      </li>
-      <li id="pg-wheel_page-name-2" class="pg-wheel_page-name ag-wheel_page-name">
-        <a href="#pg-wheel_page-anchor-2">
-          <span class="ag-wheel-page_num">02</span>
-          <div class="ag-wheel-page_name">Section 2</div>
-        </a>
-      </li>
-      <li id="pg-wheel_page-name-3" class="pg-wheel_page-name ag-wheel_page-name">
-        <a href="#pg-wheel_page-anchor-3">
-          <span class="ag-wheel-page_num">03</span>
-          <div class="ag-wheel-page_name">Section 3</div>
+    <ul ref="wheel" class="ag-wheel_list">
+      <li v-for="(title, i) in titles" :key="title" class="pg-wheel_page-name ag-wheel_page-name"
+        v-bind:class="[i === index ? 'pg-ag-active' : 'passive']">
+        <a :href="`#pg-wheel_page-anchor-${i + 1}`">
+          <span class="ag-wheel-page_num">{{ i }}</span>
+          <div class="ag-wheel-page_name">{{ title }}</div>
         </a>
       </li>
     </ul>
@@ -25,6 +14,16 @@
 
 <script lang="ts">
 export default {
+  data() {
+    return {
+      titles: [
+        'Top',
+        'About',
+        'Works',
+        'Contact',
+      ],
+    };
+  },
   props: {
     index: {
       type: Number,
@@ -34,9 +33,8 @@ export default {
   },
   watch: {
     index(val: number) {
-      document.querySelectorAll(".pg-wheel_page-name").forEach((e) => e.classList.remove("pg-ag-active"));
-      document.querySelector(`#pg-wheel_page-name-${val + 1}`)?.classList.add("pg-ag-active");
-      (document.querySelector("#pg-wheel") as HTMLElement)!.style.transform = `rotate(${(0 === val ? 0 : -22.5 * (val))}deg)`;
+      // @ts-ignore
+      (this.$refs as any).wheel.style.transform = `rotate(${(0 === val ? 0 : -22.5 * (val))}deg)`;
     },
   },
 }
