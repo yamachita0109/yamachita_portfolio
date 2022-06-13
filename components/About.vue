@@ -3,7 +3,7 @@
     <div class="slide ag-section-slide1">
       <div class="ag-section-slide1-content">
         <p class="ag-section-slide1-content_logo">
-          <img src="logo.png"></img>
+          <img src="logo.png" />
         </p>
         山下 数政(Yamashita Kazumasa)
       </div>
