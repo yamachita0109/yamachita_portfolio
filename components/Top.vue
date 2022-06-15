@@ -23,7 +23,7 @@ export default {}
   font-family: reitam, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
   &_title {
-    font-size: 2.25vw;
+    font-size: 2.25rem;
     color: #384660;
   }
 }
