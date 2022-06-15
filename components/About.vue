@@ -37,6 +37,7 @@ export default {}
         height: 400px;
         position: relative;
         overflow: hidden;
+        border-radius: 30px;
         img {
           position: absolute;
           top: 50%;
