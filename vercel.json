@@ -30,6 +30,13 @@
     {
       "src": "/(.*)",
       "headers": {
+        "cache-control": "public, max-age=31536000"
+      },
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "headers": {
         "cache-control": "s-maxage=1, stale-while-revalidate "
       },
       "dest": "/"
