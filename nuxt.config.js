@@ -23,12 +23,14 @@ export default {
   css: [
     '@/assets/css/main.css',
     '@/assets/css/style.css',
+    '@/assets/css/a11y-dark.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     // { src: '~/plugins/fullpage', mode: 'client' },
     { src: '~/plugins/aos', mode: 'client' },
+    { src: '~/plugins/highlight', mode: 'client' },
   ],
 
    // Auto import components: https://go.nuxtjs.dev/config-components
