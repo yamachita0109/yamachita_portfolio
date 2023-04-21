@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html,
+body {
+  color: '';
+  font-family: '';
+  font-weight: '';
+  letter-spacing: '';
+  line-height: '';
+  background-color: #EDF2F6;
+  color: #1f1f1f;
+  font-family: LIFULLFONT, '游ゴシック体', YuGothic, '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+  font-size: 1.4rem;
+  text-size-adjust: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: '';
+  font-family: '';
+  font-weight: '';
+  letter-spacing: '';
+  line-height: '';
+  word-break: break-all;
+}
+
+p {
+  margin: 2em 0;
+}
+
+pre {
+  font-size: inherit;
+}
+
+blockquote {}
+
+table {
+  max-width: 100%;
+}
+
+th,
+td {
+  padding: .5em;
+}
+
+ol,
+ul {
+  padding-left: 2em;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+input,
+textarea,
+button {
+  font-size: inherit;
+  line-height: '';
+}
+
+code {
+  font-size: inherit;
+  word-break: break-all;
+}
+
+img {
+  max-width: 100%;
+}
