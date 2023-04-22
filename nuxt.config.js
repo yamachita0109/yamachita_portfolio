@@ -31,6 +31,7 @@ export default {
     // { src: '~/plugins/fullpage', mode: 'client' },
     { src: '~/plugins/aos', mode: 'client' },
     { src: '~/plugins/highlight', mode: 'client' },
+    { src: '~/plugins/icon', mode: 'client' },
   ],
 
    // Auto import components: https://go.nuxtjs.dev/config-components
@@ -48,7 +49,6 @@ export default {
   modules: [
     'nuxt-fullpage.js',
   ],
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

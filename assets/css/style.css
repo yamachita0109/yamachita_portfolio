@@ -28,10 +28,6 @@ h6 {
   word-break: break-all;
 }
 
-p {
-  margin: 2em 0;
-}
-
 pre {
   font-size: inherit;
 }
@@ -70,4 +66,80 @@ code {
 
 img {
   max-width: 100%;
+}
+
+.review-container {
+  padding: 20px 0;
+}
+.review {
+  text-align: center;
+  margin: 0;
+}
+
+.review span {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  color: #CCCCCC;
+  font-size: 1rem;
+}
+
+.review span:before,
+.review span:after {
+  content: '★★★★★';
+}
+
+.review span:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #ffcf32;
+}
+
+.review span[data-rate="5"]:after {
+  width: 100%;
+}
+
+.review span[data-rate="4.5"]:after {
+  width: 90%;
+}
+
+.review span[data-rate="4"]:after {
+  width: 80%;
+}
+
+.review span[data-rate="3.5"]:after {
+  width: 70%;
+}
+
+.review span[data-rate="3"]:after {
+  width: 60%;
+}
+
+.review .review span[data-rate="2.5"]:after {
+  width: 50%;
+}
+
+.review span[data-rate="2"]:after {
+  width: 40%;
+}
+
+.review span[data-rate="1.5"]:after {
+  width: 30%;
+}
+
+.review span[data-rate="1"]:after {
+  width: 20%;
+}
+
+.review span[data-rate="0.5"]:after {
+  width: 10%;
+}
+
+.review span[data-rate="0"]:after {
+  width: 0%;
 }
