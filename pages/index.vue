@@ -141,7 +141,7 @@ export default {
         {
           name: 'aws',
           logo: '/aws.png',
-          rate: '4',
+          rate: '3.5',
         },
       ],
     };
