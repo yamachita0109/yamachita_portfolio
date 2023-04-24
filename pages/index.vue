@@ -6,12 +6,11 @@
         <!-- Title -->
         <div class="font-sans">
           <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Kazumasa Yamashita Portfolio</h1>
-          <!-- <p class="text-sm md:text-base font-normal text-gray-600">Kazumasa Yamashita</p> -->
         </div>
+        <!-- Title -->
 
+        <!-- Profile -->
         <h2 class="py-6 font-sans">Profile</h2>
-
-        <!-- Logo -->
         <p class="py-1">
           <img
             src="/logo.png"
@@ -29,10 +28,7 @@
           <a href="https://qiita.com/yamachita0109" target="_blank">
             <svg class="h-6 m-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 256c0 88.4 71.6 160 160 160c28.9 0 56-7.7 79.4-21.1l-72-86.4c-11.3-13.6-9.5-33.8 4.1-45.1s33.8-9.5 45.1 4.1l70.9 85.1C371.9 325.8 384 292.3 384 256c0-88.4-71.6-160-160-160S64 167.6 64 256zM344.9 444.6C310 467 268.5 480 224 480C100.3 480 0 379.7 0 256S100.3 32 224 32s224 100.3 224 224c0 56.1-20.6 107.4-54.7 146.7l47.3 56.8c11.3 13.6 9.5 33.8-4.1 45.1s-33.8 9.5-45.1-4.1l-46.6-55.9z"/></svg>
           </a>
-
         </div>
-
-        <!--Post Content-->
         <div class="hljs overflow-x-scroll p-4 text-xs">
           <pre v-highlightjs>
 <code class="javascript">const name = '山下 数政';
@@ -54,27 +50,33 @@ const tags = [
 ];</code>
           </pre>
         </div>
+        <!-- Profile -->
 
+        <!-- Skill -->
         <h2 class="py-6 font-sans">Skill</h2>
-        <div
-          v-for="skill in skills"
-          :key="skill.logo"
-          class="grid grid-cols-2 gap-4 py-2"
-        >
-          <div data-aos="slide-right">
-            <img
-              :src="skill.logo"
-              class="h-16 flex items-center m-0 m-auto"
-              :alt="skill.name"
-            />
-          </div>
-          <div class="review-container" data-aos="slide-left">
-            <p class="review"><span :data-rate=skill.rate></span></p>
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+          <div
+            v-for="skill in skills"
+            :key="skill.logo"
+            class="grid grid-cols-2 gap-4 py-2"
+          >
+            <div data-aos="slide-right">
+              <img
+                :src="skill.logo"
+                class="h-16 flex items-center m-0 m-auto"
+                :alt="skill.name"
+              />
+            </div>
+            <div class="review-container" data-aos="slide-left">
+              <p class="review"><span :data-rate=skill.rate></span></p>
+            </div>
           </div>
         </div>
+        <!-- Skill -->
 
-    <br><br><br><br><br><br><br>
+        <!-- Blog -->
 
+        <!-- Blog -->
 
       </div>
     </div>
