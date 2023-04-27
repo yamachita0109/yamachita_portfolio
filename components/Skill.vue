@@ -5,7 +5,7 @@
       <div
         v-for="skill in skills"
         :key="skill.logo"
-        class="grid grid-cols-2 gap-4 py-2"
+        class="grid grid-cols-2 gap-4 py-4"
       >
         <div data-aos="slide-right">
           <img
