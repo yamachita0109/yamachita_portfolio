@@ -1,5 +1,5 @@
 require('dotenv').config()
-const { QIITA_KEY } = process.env
+const { QIITA_KEY, APP_URL } = process.env
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -62,6 +62,7 @@ export default {
     }
   ],
   env: {
-    QIITA_KEY
+    QIITA_KEY,
+    APP_URL
   }
 }

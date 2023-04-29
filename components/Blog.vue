@@ -49,7 +49,7 @@ export default {
     };
   },
   async created() {
-    const data = await fetch('/api/qiita')
+    const data = await fetch(`${process.env.APP_URL}/api/qiita`)
     const json = await data.json()
     // @ts-ignore
     this.articles = json.slice(0, 5)
